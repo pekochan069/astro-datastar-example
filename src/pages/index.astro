@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <div>
-    <div id="from-api" data-signals-api="'World'" data-on-load="@get('/api/hello')">Hello</div>
-    <div id="from-partial" data-signals-partial="'Partial'" data-on-load="@get('/partials/hello')">Hello</div>
+    <div id="from-api" data-signals-api="'api'" data-on-load="@get('/api/hello')">Hello</div>
+    <div id="from-partial" data-signals-partial="'partial'" data-on-load="@get('/partials/hello')">Hello</div>
   </div>
 </Layout>
