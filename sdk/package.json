@@ -1,0 +1,36 @@
+{
+  "name": "datastar-sdk",
+  "description": "Cross-runtime Javascript SDK for Datastar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starfederation/datastar.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starfederation/datastar/issues"
+  },
+  "main": "./script/node/node.js",
+  "module": "./esm/node/node.js",
+  "exports": {
+    ".": {
+      "import": "./esm/node/node.js",
+      "require": "./script/node/node.js"
+    },
+    "./src/web/serverSentEventGenerator.js": {
+      "import": "./esm/web/serverSentEventGenerator.js",
+      "require": "./script/web/serverSentEventGenerator.js"
+    }
+  },
+  "scripts": {
+    "test": "node test_runner.js"
+  },
+  "dependencies": {
+    "deepmerge-ts": "*",
+    "type-fest": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "picocolors": "^1.0.0"
+  },
+  "_generatedBy": "dnt@dev"
+}

@@ -1,0 +1,17 @@
+---
+import { ServerSentEventGenerator } from "datastar-sdk/src/web/serverSentEventGenerator.js";
+
+export const partial = true;
+
+const request = Astro.request;
+const reader = await ServerSentEventGenerator.readSignals(request);
+if (!reader.success) {
+  return new Response("Error reading signals", { status: 400, headers: { "Content-Type": "text/html" } });
+}
+
+if (!("partial" in reader.signals)) {
+  return new Response("partial signal not found", { status: 400, headers: { "Content-Type": "text/html" } });
+}
+---
+
+<div id="from-partial">Hello {reader.signals["partial"]}</div>

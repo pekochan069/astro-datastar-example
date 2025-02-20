@@ -1,0 +1,24 @@
+export declare const DATASTAR: "datastar";
+export declare const DATASTAR_REQUEST = "Datastar-Request";
+export declare const VERSION = "1.0.0-beta.7";
+export declare const DefaultFragmentsSettleDurationMs = 300;
+export declare const DefaultSseRetryDurationMs = 1000;
+export declare const DefaultExecuteScriptAttributes = "type module";
+export declare const DefaultFragmentsUseViewTransitions = false;
+export declare const DefaultMergeSignalsOnlyIfMissing = false;
+export declare const DefaultExecuteScriptAutoRemove = true;
+export declare const DatastarDatalineSelector = "selector";
+export declare const DatastarDatalineMergeMode = "mergeMode";
+export declare const DatastarDatalineSettleDuration = "settleDuration";
+export declare const DatastarDatalineFragments = "fragments";
+export declare const DatastarDatalineUseViewTransition = "useViewTransition";
+export declare const DatastarDatalineSignals = "signals";
+export declare const DatastarDatalineOnlyIfMissing = "onlyIfMissing";
+export declare const DatastarDatalinePaths = "paths";
+export declare const DatastarDatalineScript = "script";
+export declare const DatastarDatalineAttributes = "attributes";
+export declare const DatastarDatalineAutoRemove = "autoRemove";
+export declare const FragmentMergeModes: readonly ["morph", "inner", "outer", "prepend", "append", "before", "after", "upsertAttributes"];
+export declare const DefaultFragmentMergeMode = "morph";
+export declare const EventTypes: readonly ["datastar-merge-fragments", "datastar-merge-signals", "datastar-remove-fragments", "datastar-remove-signals", "datastar-execute-script"];
+//# sourceMappingURL=consts.d.ts.map
